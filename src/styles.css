@@ -1,1 +1,56 @@
+@media screen and (min-width: 750px) {
+
+    .sliderimg {
+        height: 150px;
+    }
+
+}
+
 /* You can add global styles to this file, and also import other style files */
+.logos img{
+    width: 45px;
+    height: 30px;
+    padding-left:15px;
+}
+.navbar-light .navbar-nav a {
+    color: white;
+    font-weight: 600;
+    padding-left:25px;
+    text-decoration: none;
+}
+.navbar-light .navbar-nav a:hover {
+    padding: 20px;
+    color:red;
+
+}
+
+.sliderimg {
+    height: 620px;
+}
+ui-carousel {
+    height: 100%;
+}
+.pagehead {
+    padding: 20px;
+    font-weight: 500;
+}
+.pagecontent {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pagecontent .biography {
+    border: solid 1px;
+    border-color: wheat;
+    /* height: 200px; */
+
+}
+.pagecontent .biography img {
+    width: 120px;
+    height: 130px;
+    border-radius: 20px;
+    padding: 15px;
+    float: left;
+}
+.pagecontent .biography .message {
+    padding: 15px;
+}
