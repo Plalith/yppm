@@ -1,0 +1,25 @@
+<div class="pagehead">
+ <h3>Admin Login</h3> 
+</div>
+<div class="login">
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm">
+      <form (ngSubmit)="login(f)" #f="ngForm">
+        <label><b>User Name</b></label>
+        <br>
+        <input type="text" name="uname" class="form-control" ngModel required>
+        <br>
+        <label><b>Password</b></label>
+        <br>
+        <input type="password" name="password" class="form-control" ngModel required>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success" [disabled]="!f.valid ">Login</button> 
+        <br>
+        <p style="color:red;">{{report}}</p>
+      </form>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div>

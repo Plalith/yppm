@@ -1,0 +1,46 @@
+<div class="header">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a  routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/announcements">Announcements</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/prayerrequests">Prayer Request</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/testimonial">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/aboutus">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a  routerLink="/contactus">Contact Us</a>
+            </li>    
+            <li class="nav-item" *ngIf="this.ds.login">
+                <a  routerLink="/admin">Admin Pannel</a>
+            </li>        
+        </ul>
+        <div class="logos">
+            <a href=""><img src="../../assets/images/logos/facebook_logos_PNG19757.png"></a>
+            <a href=""><img src="../../assets/images/logos/gmail_logo_PNG6.png"></a>
+            <a href=""><img src="../../assets/images/logos/Google-plus-circle-icon-png.png"></a>
+            <a href=""><img src="../../assets/images/logos/twitter_PNG29.png"></a>
+            <span *ngIf="!this.ds.login else logout">
+              <a routerLink="/login"><img src="../../assets/images/logos/Administrator-icon.png"></a>
+            </span>
+              <ng-template #logout>
+              <a role="button" (click)="logout()" routerLink=""><img src="../../assets/images/logos/power-off-icon-hi.png"></a>                
+              </ng-template>
+            
+            <!-- <ng-template #logout></ng-template></a> -->
+        </div>
+      </div>
+    </nav>  
+</div>

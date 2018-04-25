@@ -1,0 +1,11 @@
+.adminmenu {
+    padding: 20px;
+    
+}
+.adminmenu a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}

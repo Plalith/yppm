@@ -1,0 +1,16 @@
+<div class="pagehead">
+    <h3>Add Announcement</h3>
+</div>
+<div class="pagecontent">
+  <div class="row">
+  <div class="col-sm-8">
+    <form (ngSubmit)="addupdate(f)" #f="ngForm">
+      <input type="text" name="announcement" class="form-control" ngModel required>
+      <br>
+      <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Add Announcement</button> &emsp;{{report}}
+      <br>
+      <br>
+    </form>
+  </div>
+</div>
+</div>

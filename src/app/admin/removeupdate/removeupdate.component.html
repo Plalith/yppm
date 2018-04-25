@@ -1,0 +1,27 @@
+<div class="pagehead">
+    <h3>Remove Update</h3>
+</div>
+<div class="pagecontent">
+    <div class="row">
+        <div class="col-sm">
+          <div class="row">
+              <div class="col-sm-12">
+                <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let update of updates">
+                    <div class="row">
+                        <div class="col-sm-10">
+                          {{update.name}} &emsp;
+                          <b>{{update.date}}</b>
+                        </div>
+                        <div class="col-sm-2">
+                          <button type="submit" class="btn btn-primary" (click)="updatedelete(update._id)">Delete</button>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>  {{op}}
+        </div>
+      </div>
+</div>
+

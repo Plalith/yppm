@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm">
+      <h4>Prayer Requests</h4>
+      <br>
+      <br>
+      <div class="row">
+          <div class="col-sm-12">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let result of results">
+                <div class="row">
+                    <div class="col-sm-10">
+                      {{result.name}} &emsp; <b>{{result.mob}}</b>
+                      <br>
+                      {{result.message}}
+                    </div>
+                    <div class="col-sm-2">
+                      <button type="submit" class="btn btn-danger" (click)="delete(result._id)">Delete</button>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
