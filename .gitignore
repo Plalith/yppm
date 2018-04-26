@@ -1,7 +1,7 @@
 # See g/ for more about ignoring files.
 
 # compiled output
-/dist
+
 /dist-server
 /tmp
 /out-tsc

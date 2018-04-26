@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/YPPM');
+mongoose.connect('mongodb://lalith889:Lalith123@ds259499.mlab.com:59499/yppm');
 
 // Error handling
 const sendError = (err, res) => {
