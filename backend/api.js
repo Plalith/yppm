@@ -18,7 +18,17 @@ let response = {
     message: null
 };
 // Mongoose Models//
+router.use((req,res,next)=>{
 
+    if(req.header('csrf') == '1')
+    { 
+        next();
+    }
+    else{
+        return res.status(501).json({message:'Auth Failed!'});
+        
+    }
+});
 
 // Updtaes Model
 var updates = mongoose.model('updates' , {
